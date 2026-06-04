@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - The GOAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lionel Messi</h1>
+        <p>The Definitive Profile of Football's Greatest Legend</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>Quick Facts</h2>
+                <ul class="facts-list">
+                    <li><strong>Full Name:</strong> Lionel Andrés Messi Cuccittini</li>
+                    <li><strong>Born:</strong> June 24, 1987 (Rosario, Argentina)</li>
+                    <li><strong>Current Team:</strong> Inter Miami CF & Argentina National Team</li>
+                    <li><strong>Jersey Number:</strong> #10</li>
+                    <li><strong>Play Style:</strong> Elite playmaker, prolific goalscorer, and dribbling virtuoso</li>
+                    <li><strong>Iconic Milestone:</strong> Captained Argentina to lift the historic 2022 FIFA World Cup.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>All-Time Records</h2>
+                <ul class="facts-list">
+                    <li><strong>Ballon d'Or Awards:</strong> 8 (Most in football history)</li>
+                    <li><strong>European Golden Shoes:</strong> 6</li>
+                    <li><strong>Calendar Year Peak:</strong> Scored an unbelievable 91 goals in 2012</li>
+                    <li><strong>One-Club Loyalty:</strong> 672 goals scored strictly for FC Barcelona</li>
+                    <li><strong>Assists King:</strong> Most official recorded assists in football history (414).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="interactive-section">
+            <h2>Career Stats Explorer</h2>
+            <p class="subtitle">Click a team filter to see his certified stats break down by uniform</p>
+            
+            <div class="btn-group">
+                <button class="active" onclick="updateStats('total', this)">Career Total</button>
+                <button onclick="updateStats('barca', this)">FC Barcelona</button>
+                <button onclick="updateStats('psg', this)">Paris Saint-Germain</button>
+                <button onclick="updateStats('miami', this)">Inter Miami</button>
+                <button onclick="updateStats('argentina', this)">Argentina</button>
+            </div>
+
+            <div class="stats-display">
+                <div class="stat-box">
+                    <h3 id="stat-matches">1,151</h3>
+                    <p>Apps</p>
+                </div>
+                <div class="stat-box">
+                    <h3 id="stat-goals">906</h3>
+                    <p>Goals</p>
+                </div>
+                <div class="stat-box">
+                    <h3 id="stat-assists">408</h3>
+                    <p>Assists</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with HTML, CSS, and JavaScript. Data updated as of mid-2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
