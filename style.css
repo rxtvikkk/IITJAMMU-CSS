@@ -1,0 +1,172 @@
+/* Reset margins and set default font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Banner Design */
+header {
+    background: linear-gradient(135deg, #0A2540, #007BFF);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Content Container */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Side-by-Side Cards (Responsive Grid) */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Individual Cards */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #0A2540;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.facts-list {
+    list-style: none;
+}
+
+.facts-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.facts-list li::before {
+    content: "⚡";
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+}
+
+/* Stats Section Layout */
+.interactive-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.interactive-section h2 {
+    color: #0A2540;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #64748b; 
+    margin-bottom: 1.5rem;
+}
+
+/* Interactive Buttons */
+.btn-group {
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #e2e8f0;
+    border: none;
+    color: #4a5568;
+    padding: 0.6rem 1.5rem;
+    margin: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #cbd5e1;
+}
+
+button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Number Boxes */
+.stats-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 0.25rem;
+}
+
+.stat-box p {
+    font-size: 0.9rem;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #e2e8f0;
+}
